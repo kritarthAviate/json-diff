@@ -1,0 +1,41 @@
+.heading {
+  font-size: 30px;
+}
+
+.inputOutput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+textarea {
+  background-color: #f3f3f3;
+  border: 1px solid brown;
+  border-radius: 4px;
+}
+
+.submitButton {
+  height: 50px;
+  width: 120px;
+  font-size: 20px;
+  background: #fff;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.buttonWithText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.error {
+  font-size: 18px;
+  color: red;
+}
+
+.result {
+  font-size: 18px;
+  color: green;
+}

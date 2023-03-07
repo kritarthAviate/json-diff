@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# JSON Similarity Score Calculator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This App compares two json objects and gives a score between 0 and 1 as to how similar they are. A score of 1 means the objects are identical.
 
-## Available Scripts
+Checkout the app here:- https://endearing-wisp-cbacd9.netlify.app/
 
-In the project directory, you can run:
+#### How to Install and Run the Project.
 
-### `npm start`
+After cloning the project, run : `npm install`
+To start the app, run : `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### Examples of how to Use the Project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+first Obj - {"abc": "abc"}
+second Obj - {"abc": "abcb"}
+// Score is 0.5 since keys are same but values are different
+```
 
-### `npm test`
+```
+first Obj - {
+    "abc": "[1]",
+    "def": "def"
+}
+second Obj - {
+    "abc": "[1]",
+    "xxx": "xxx"
+}
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// Score is 0.3333 since both objects have 1 same key-value pair, the key "def" is missing in ob2 and key "xxx" is missing in ob1
+```
 
-### `npm run build`
+#### Scores from sample data in test_data folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `BreweriesMaster` and `BreweriesSample1` -> 1.0000
+- `BreweriesMaster` and `BreweriesSample2` -> 0.7547
+- `BreweriesMaster` and `BreweriesSample3` -> 0.9574
+- `BreweriesMaster` and `BreweriesSample4` -> 0.4000
+- `BreweriesMaster` and `BreweriesSample5` -> 0.9524

@@ -20,6 +20,7 @@ textarea {
   font-size: 20px;
   background: #fff;
   border: 1px solid black;
+  border-radius: 4px;
   cursor: pointer;
 }
 

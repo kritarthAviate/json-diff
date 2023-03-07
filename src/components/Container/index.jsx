@@ -42,7 +42,7 @@ const Container = () => {
 
   return (
     <>
-      <p className="heading">JSON Diff</p>
+      <p className="heading">JSON Similarity Score Calculator</p>
       <form onSubmit={handleSubmit}>
         <div className="inputOutput">
           <div>

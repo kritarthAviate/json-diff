@@ -6,12 +6,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 60vh;
+}
+
+.textArea {
+  width: 40vw;
 }
 
 textarea {
   background-color: #f3f3f3;
   border: 1px solid brown;
   border-radius: 4px;
+  width: 100%;
 }
 
 .submitButton {
@@ -34,9 +40,11 @@ textarea {
 .error {
   font-size: 18px;
   color: red;
+  text-align: center;
 }
 
 .result {
   font-size: 18px;
   color: green;
+  text-align: center;
 }

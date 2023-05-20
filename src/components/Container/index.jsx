@@ -45,7 +45,7 @@ const Container = () => {
       <p className="heading">JSON Similarity Score Calculator</p>
       <form onSubmit={handleSubmit}>
         <div className="inputOutput">
-          <div>
+          <div className="textArea">
             <textarea
               rows={30}
               cols={60}
@@ -58,10 +58,10 @@ const Container = () => {
             <button type="submit" className="submitButton">
               Compare
             </button>
-            {<p className="error">{error}</p>}
+            {!!error?.length && <p className="error">{error}</p>}
             {<p className="result">{result}</p>}
           </div>
-          <div>
+          <div className="textArea">
             <textarea
               rows={30}
               cols={60}
